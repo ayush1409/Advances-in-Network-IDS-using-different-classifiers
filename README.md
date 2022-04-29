@@ -4,7 +4,7 @@ This project is an implementation of Realtime Network based Intrusion Detection 
 ### Dataset
 We have used <a href="https://www.unb.ca/cic/datasets/ids-2017.html">CIC-IDS 2017</a> dataset. It contains benign and the most up-to-date common attacks, which resembles the true real-world data (PCAPs). It also includes the results of the network traffic analysis using CICFlowMeter with labeled flows based on the time stamp, source, and destination IPs, source and destination ports, protocols and attack (CSV files).
 
-### Create python3 virtual environment using
+### Create python3 virtual environment using venv
 ```sh
 pip install venv
 python -m venv ids_env
@@ -49,7 +49,7 @@ cicflowmeter -f example.pcap -c flows.csv
 Sniff packets real-time from interface to flow csv: (**need root permission**)
 
 ```
-cicflowmeter -i eth0 -c flows.csv
+cicflowmeter -i <network-interface> -c flows.csv
 ```
 
 #### Now run the Network IDS
@@ -59,4 +59,4 @@ python manage.py runserver
 ```
 The above command will launch a django application. In the main page, upload **flows.csv** file. The result screen will look like
 
-![alt text](https://github.com/ayush1409/Advances-in-Network-IDS-using-different-classifiers/blob/main/NetworkIDS_output.jpg)
+<center>![alt text](https://github.com/ayush1409/Advances-in-Network-IDS-using-different-classifiers/blob/main/NetworkIDS_output.jpg)</center>
