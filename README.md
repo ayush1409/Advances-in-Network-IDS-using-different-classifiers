@@ -24,6 +24,7 @@ cd ..
 
 ```sh
 git clone https://github.com/ayush1409/Advances-in-Network-IDS-using-different-classifiers.git
+cd Advances-in-Network-IDS-using-different-classifiers
 pip install -r requirements.txt
 ```
 ### Usage
