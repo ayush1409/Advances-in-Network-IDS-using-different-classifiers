@@ -48,6 +48,6 @@ cicflowmeter -i eth0 -c flows.csv
 ```
 python manage.py runserver
 ```
-Now in the main page, upload $flows.csv$ file. The result screen will look like
+Now in the main page, upload **flows.csv** file. The result screen will look like
 
 ![alt text](https://github.com/ayush1409/Advances-in-Network-IDS-using-different-classifiers/blob/main/NetworkIDS_output.jpg)
