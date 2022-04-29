@@ -63,3 +63,4 @@ The above command will launch a django application. In the main page, upload **f
   <img src="https://github.com/ayush1409/Advances-in-Network-IDS-using-different-classifiers/blob/main/NetworkIDS_output.jpg"/>
 </p>
 
+We have performed some realtime DoS attacks during the flow-capturing period using hping3 command. As you can see, Our application can able to capture the intentional simulated DoS attacks.
