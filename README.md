@@ -31,25 +31,6 @@ pip install -r requirements.txt
 
 #### First capture the network flow data
 
-```sh
-usage: cicflowmeter [-h] (-i INPUT_INTERFACE | -f INPUT_FILE) [-c] [-u URL_MODEL] output
-
-positional arguments:
-  output                output file name (in flow mode) or directory (in sequence mode)
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -i INPUT_INTERFACE    capture online data from INPUT_INTERFACE
-  -f INPUT_FILE         capture offline data from INPUT_FILE
-  -c, --csv, --flow     output flows as csv
-```
-
-Convert pcap file to flow csv:
-
-```
-cicflowmeter -f example.pcap -c flows.csv
-```
-
 Sniff packets real-time from interface to flow csv: (**need root permission**)
 
 ```
@@ -68,4 +49,27 @@ The above command will launch a django application. In the main page, upload **f
   <img src="https://github.com/ayush1409/Advances-in-Network-IDS-using-different-classifiers/blob/main/NetworkIDS_output.jpg"/>
 </p>
 
-We have performed some realtime DoS attacks during the flow-capturing period using hping3 command. As you can see, Our application can able to capture the intentional simulated DoS attacks.
+We have performed some realtime DoS attacks during the flow-capturing period using hping3 command. As you can see, Our application can able to capture the intentional simulated DoS attacks. You can use the following hping3 command to perform fake DoS attack
+
+```
+sudo apt-get install hping3
+hping3 -c 15000 -d 120 -S -w 64 -p 80 --flood --rand-source <ip>
+```
+
+### Note
+To run the application, you don't need to train the models as they are already trained, the models weights are available in **saved_models** directory
+
+### For training models
+#### Perform preprocessing
+Run Model_Training/data_preprocessing.ipynb file.
+
+#### For training individual models 
+Run Model_Training/rf.ipynb file for Random-Forest classifier
+Run Model_Training/lstm.ipynb file for LSTM classifier
+Run Model_Training/Anamoly_detection_with_NN.ipynb file for Neural Network classifer
+
+#### For running ensemble model
+Run Model_Training/clubbingnew.ipynb for ensemble model
+
+
+
