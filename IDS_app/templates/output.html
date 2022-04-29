@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <table>
+        <tr>
+        <th>Intrusion Type</th>
+        <th>Number of packets</th>
+        </tr>
+        {% for key, value in label_count_dict.items %}
+        <tr>
+            <td>{{key}}</td>
+            <td>{{value}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="{% url 'index' %}">Go Back</a>
+</div>
+{% endblock content %}

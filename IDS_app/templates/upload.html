@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form class="form-inline justify-content-center mb-5", method="POST", action="{% url 'get_packets' %}">
+    {% csrf_token %}
+    <div class="input-group">
+        <input type="file" class="form-control-lg" placeholder="Packets Log Here", value="{{form.log_file}}">
+        <!-- {{form}} -->
+        <!-- <input type="text" class="form-control-lg" placeholder="Your Email"> -->
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="submit">Upload Log</button>
+        </div>
+    </div>
+</form>
+
+
+
+<!-- <form method="POST", action="{% url 'get_packets' %}">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" class="submit", value="Upload">
+</form> -->
+{% endblock content %}

@@ -1,0 +1,361 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SafetyFirst - Security Guard Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'IDS_app/img/favicon.ico' %}" rel="icon">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="{% static 'IDS_app/lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'IDS_app/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'IDS_app/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        
+        <div class="row py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-capitalize font-italic"><span class="text-primary">Pegasus</span></h1>
+                </a>
+            </div>
+            <!-- <div class="col-lg-8 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <div class="d-inline-flex flex-column text-center pr-3 border-right">
+                        <h6>Our Office</h6>
+                        <p class="m-0">123 Street, NY, USA</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center px-3 border-right">
+                        <h6>Email Us</h6>
+                        <p class="m-0">info@example.com</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center pl-3">
+                        <h6>Call Us</h6>
+                        <p class="m-0">+012 345 6789</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <!-- <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-0">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-4">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div> -->
+    <!-- Navbar End -->
+    
+    
+    <!-- Carousel Start -->
+    <!-- <div class="container-fluid p-0">
+        <div id="blog-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner"> -->
+                <!-- <div class="carousel-item active">
+                    <img class="w-100" src="{% static 'IDS_app/img/carousel-1.jpg' %}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h4 class="text-primary m-0">Your Safety, Our Efforts</h4>
+                        <h4 class="display-4 m-0 mt-2 mt-md-3 text-white">Best Security Service</h4>
+                        <a href="" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Upload Packet Logs</a>
+                    </div>
+                </div> -->
+                <!-- <div class="carousel-item">
+                    <img class="w-100" src="{% static 'IDS_app/img/carousel-2.jpg' %}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h4 class="text-primary m-0">Your Safety, Our Efforts</h4>
+                        <h4 class="display-4 m-0 mt-2 mt-md-3 text-white">Highly Trained Guards</h4>
+                        <a href="" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Upload Packet Logs</a>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+            <!-- <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+                <div class="btn btn-primary rounded-circle" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-prev-icon mb-n2"></span>
+                </div>
+            </a> -->
+            <!-- <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+                <div class="btn btn-primary rounded-circle" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-next-icon mb-n2"></span>
+                </div>
+            </a> -->
+        <!-- </div>
+    </div> -->
+    <!-- Carousel End -->
+
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Features Start -->
+    <!-- <div class="container-fluid py-5 py-lg-0 feature">
+        <div class="row py-5 py-lg-0">
+            <div class="col-lg-4 p-0">
+                <div class="feature-item d-flex align-items-center border-right px-5 mb-4 mb-lg-0">
+                    <i class="flaticon-policeman display-3 text-primary mr-4"></i>
+                    <div class="">
+                        <h5 class="mb-3">Professional Staff</h5>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci velit id libero
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-0">
+                <div class="feature-item d-flex align-items-center border-right px-5 mb-4 mb-lg-0">
+                    <i class="flaticon-helmet display-3 text-primary mr-4"></i>
+                    <div class="">
+                        <h5 class="mb-3">Latest Equipments</h5>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci velit id libero
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-0">
+                <div class="feature-item d-flex align-items-center px-5">
+                    <i class="flaticon-surveillance display-3 text-primary mr-4"></i>
+                    <div class="">
+                        <h5 class="mb-3">24/7 Support</h5>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci velit id libero
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Features End -->
+
+
+    <!-- About Start -->
+    <!-- <div class="container-fluid mb-5" style="background: #f6f6f6;">
+        <div class="row align-items-center">
+            <div class="col-lg-6 px-0">
+                <img width="100%" class="img-fluid" src="{% static 'IDS_app/img/about.jpg' %}" alt="Image">
+            </div>
+            <div class="col-lg-6 py-5 py-lg-0 px-3 px-lg-5">
+                <h5 class="text-primary mb-3">About Us</h5>
+                <h1 class="mb-4">15 Years of Experience in randi rona by Ankit</h1>
+                <p>Labore vero lorem eos sed aliquy ipsum aliquy sed. Vero dolore dolore takima ipsum lorem rebum</p>
+                <div class="row py-2">
+                    <div class="col-sm-6">
+                        <i class="flaticon-approved display-3 text-primary"></i>
+                        <h5 class="mt-2">Govt Approved</h5>
+                        <p>Ipsum sanctu dolor ipsum dolore sit et kasd duo</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="flaticon-medal display-3 text-primary"></i>
+                        <h5 class="mt-2">Award Winning</h5>
+                        <p>Ipsum sanctu dolor ipsum dolore sit et kasd duo</p>
+                    </div>
+                </div>
+                <a href="" class="btn btn-lg px-4 btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div> -->
+    <!-- About End -->
+
+    <!-- Team Start -->
+    <!-- <div class="container pt-5 pb-3">
+        <div class="d-flex flex-column text-center mb-5">
+            <h5 class="text-primary mb-3">Security Officers</h5>
+            <h1 class="m-0">Meet Our Security Officers</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="row mb-2 align-items-center">
+                    <div class="col-6 text-right">
+                        <h6>Officer Name</h6>
+                        <h6 class="text-muted font-weight-normal text-capitalize mb-2">Designation</h6>
+                        <p>Ipsum tempor tempor dolor no est diam duo dolore, dolor eos dolor amet erat clita amet.</p>
+                        <div class="d-flex justify-content-end">
+                            <a href=""><i class="fab fa-twitter mr-3"></i></a>
+                            <a href=""><i class="fab fa-facebook-f mr-3"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in mr-3"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <img class="img-thumbnail p-3" src="{% static 'IDS_app/img/team-1.jpg' %}" alt="Image">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="row mb-2 align-items-center">
+                    <div class="col-6">
+                        <img class="img-thumbnail p-3" src="{% static 'IDS_app/img/team-2.jpg' %}" alt="Image">
+                    </div>
+                    <div class="col-6 text-left">
+                        <h6>Officer Name</h6>
+                        <h6 class="text-muted font-weight-normal text-capitalize mb-2">Designation</h6>
+                        <p>Ipsum tempor tempor dolor no est diam duo dolore, dolor eos dolor amet erat clita amet.</p>
+                        <div class="d-flex justify-content-start">
+                            <a href=""><i class="fab fa-twitter mr-3"></i></a>
+                            <a href=""><i class="fab fa-facebook-f mr-3"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in mr-3"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="row mb-2 align-items-center">
+                    <div class="col-6 text-right">
+                        <h6>Officer Name</h6>
+                        <h6 class="text-muted font-weight-normal text-capitalize mb-2">Designation</h6>
+                        <p>Ipsum tempor tempor dolor no est diam duo dolore, dolor eos dolor amet erat clita amet.</p>
+                        <div class="d-flex justify-content-end">
+                            <a href=""><i class="fab fa-twitter mr-3"></i></a>
+                            <a href=""><i class="fab fa-facebook-f mr-3"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in mr-3"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <img class="img-thumbnail p-3" src="{% static 'IDS_app/img/team-3.jpg' %}" alt="Image">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="row mb-2 align-items-center">
+                    <div class="col-6">
+                        <img class="img-thumbnail p-3" src="{% static 'IDS_app/img/team-4.jpg' %}" alt="Image">
+                    </div>
+                    <div class="col-6 text-left">
+                        <h6>Officer Name</h6>
+                        <h6 class="text-muted font-weight-normal text-capitalize mb-2">Designation</h6>
+                        <p>Ipsum tempor tempor dolor no est diam duo dolore, dolor eos dolor amet erat clita amet.</p>
+                        <div class="d-flex justify-content-start">
+                            <a href=""><i class="fab fa-twitter mr-3"></i></a>
+                            <a href=""><i class="fab fa-facebook-f mr-3"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in mr-3"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+    <!-- Footer Start -->
+    <!-- <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-4 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+                <p class="m-0">Ipsum amet sed vero et lorem stet eos ut, labore sed sed stet sea est ipsum ut. Volup amet ea sanct ipsum, dolore vero lorem no duo eirmod. Eirmod amet ipsum no ipsum lorem clita ut. Ut sed sit lorem ea lorem sed, amet stet sit sea ea diam tempor kasd kasd. Diam nonumy etsit tempor ut sed diam sed et ea</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Quick Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Team</a>
+                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Popular Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Team</a>
+                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by
+                    <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary border back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'IDS_app/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'IDS_app/lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'IDS_app/lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'IDS_app/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'IDS_app/mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'IDS_app/mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'IDS_app/js/main.js' %}"></script>
+</body>
+
+</html>
