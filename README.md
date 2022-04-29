@@ -2,7 +2,7 @@
 This project is an implementation of Realtime Network based Intrusion Detection System using different machine learning techniques. Our proposed model is to implement the architecture of multimodel based Anomaly IDS with Neural Network (NN), Long short-term memory (LSTM) and Random Forest. We have integrated NN with Hidden Markov Model to improve our model. We have also tested our model by performing realtime attack on our model.
 
 ### Dataset
-We have used <a href="https://www.unb.ca/cic/datasets/ids-2017.html">CIC-IDS 2017</a> dataset. It contains benign and the most up-to-date common attacks, which resembles the true real-world data (PCAPs). It also includes the results of the network traffic analysis using CICFlowMeter with labeled flows based on the time stamp, source, and destination IPs, source and destination ports, protocols and attack (CSV files).
+We have used <a href="https://www.unb.ca/cic/datasets/ids-2017.html">CIC-IDS 2017</a> dataset. It contains benign and the most up-to-date common attacks, which resembles the true real-world data (PCAPs). It also includes the results of the network traffic analysis using CICFlowMeter with labeled flows based on the time stamp, source, and destination IPs, source and destination ports, protocols and attack (CSV files). To download the complete Dataset <a href="https://drive.google.com/drive/folders/1W36-Ttpza9V23lfGOz09PiJyknj8n63J?usp=sharing">Click Here</a>
 
 ### Create python3 virtual environment using venv
 ```sh
@@ -61,6 +61,7 @@ cicflowmeter -i <network-interface> -c flows.csv
 ```
 python manage.py runserver
 ```
+
 The above command will launch a django application. In the main page, upload **flows.csv** file. The result screen will look like
 
 <p align="center">
