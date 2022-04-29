@@ -6,8 +6,9 @@ We have used <a href="https://www.unb.ca/cic/datasets/ids-2017.html">CIC-IDS 201
 
 ### Create python3 virtual environment using venv
 ```sh
-pip install venv
+python3 -m pip install --user virtualenv
 python -m venv ids_env
+source ids_env/bin/activate
 ```
 
 ### Install CICflowmeter
