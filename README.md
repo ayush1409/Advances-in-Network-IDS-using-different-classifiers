@@ -43,7 +43,7 @@ Sniff packets real-time from interface to flow csv: (**need root permission**)
 cicflowmeter -i eth0 -c flows.csv
 ```
 
-#### First capture the network flow data
+#### Now run the Network IDS
 
 ```
 python manage.py runserver
