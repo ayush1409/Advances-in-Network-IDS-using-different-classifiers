@@ -59,4 +59,8 @@ python manage.py runserver
 ```
 The above command will launch a django application. In the main page, upload **flows.csv** file. The result screen will look like
 
-<p align="center">![alt text](https://github.com/ayush1409/Advances-in-Network-IDS-using-different-classifiers/blob/main/NetworkIDS_output.jpg)</p>
+<p align="center">
+  <img src="https://github.com/ayush1409/Advances-in-Network-IDS-using-different-classifiers/blob/main/NetworkIDS_output.jpg"/>
+</p>
+
+![alt text](https://github.com/ayush1409/Advances-in-Network-IDS-using-different-classifiers/blob/main/NetworkIDS_output.jpg)
