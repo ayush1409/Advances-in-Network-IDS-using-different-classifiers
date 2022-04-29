@@ -64,9 +64,9 @@ To run the application, you don't need to train the models as they are already t
 Run Model_Training/data_preprocessing.ipynb file.
 
 #### For training individual models 
-Run Model_Training/rf.ipynb file for Random-Forest classifier
-Run Model_Training/lstm.ipynb file for LSTM classifier
-Run Model_Training/Anamoly_detection_with_NN.ipynb file for Neural Network classifer
+Run Model_Training/rf.ipynb file for Random-Forest classifier <br>
+Run Model_Training/lstm.ipynb file for LSTM classifier <br>
+Run Model_Training/Anamoly_detection_with_NN.ipynb file for Neural Network classifer <br>
 
 #### For running ensemble model
 Run Model_Training/clubbingnew.ipynb for ensemble model
