@@ -15,7 +15,9 @@ source ids_env/bin/activate
 
 ```sh
 git clone https://github.com/ayush1409/cicflowmeter-edited.git
-python cicflowmeter-edited/setup.py install
+cd cicflowmeter-edited
+python setup.py install
+cd ..
 ```
 
 ### Install Network IDS Django application
