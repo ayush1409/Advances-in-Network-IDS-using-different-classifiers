@@ -5,7 +5,7 @@ Network based Intrusion Detection System using Machine Learning.
 
 ```sh
 git clone https://github.com/ayush1409/cicflowmeter-edited.git
-cd cicflowmeter
+cd cicflowmeter-edited
 python setup.py install
 ```
 
@@ -50,5 +50,4 @@ python manage.py runserver
 ```
 Now in the main page, upload $flows.csv$ file. The result screen will look like
 
-
-
+![alt text](https://github.com/ayush1409/Advances-in-Network-IDS-using-different-classifiers/blob/main/NetworkIDS_output.jpg)
